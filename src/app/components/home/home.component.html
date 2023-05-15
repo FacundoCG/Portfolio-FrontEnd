@@ -1,9 +1,17 @@
-<app-header></app-header>
-
 <div class="container-fluid p-5">
-    <h1 class="fw-bold display-2 text-center text-light title">Welcome to my CV!</h1>
+    <h1 class="fw-bold display-2 text-center text-light title">I'm Facundo Coronel.</h1>
+    <h3 class="fw-bold text-center title">Full-stack developer</h3>
 
-    <div class="container d-flex justify-content-center mt-4">
-        <img class="img-fluid img-thumbnail" src="../../../assets/img/Perfil.jpg" width="250px" height="250px">
+    <p class="text fw-bold mt-5">Born in 2004 in Buenos Aires, Argentina. I'm a web developer who is looking forward to creating new and inspiring projects. 
+        I am a skilled and passionate web developer with expertise in creating exceptional online experiences. With a focus on clean code, user-friendly interfaces, and cutting-edge technologies, I bring ideas to life and deliver high-quality solutions.
+    </p>
+    <p class="text fw-bold">Explore my portfolio to discover the projects I have worked on and gain insights into my development process. Whether you're a business owner, startup founder, or an individual looking to establish a strong online presence, I am here to help you achieve your goals. Feel free to reach out to discuss your project or to learn more about my work.</p>
+    
+    <div class="d-flex justify-content-center mt-5">
+        <a class="nav-link active" aria-current="page" [routerLink]="['projects']">
+            <button class="btn btn-light text-dark fw-bold btn-lg btn-block">Projects</button>
+        </a>
     </div>
+    
 </div>
+
