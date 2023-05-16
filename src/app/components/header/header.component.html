@@ -25,17 +25,20 @@
   
       <form class="d-flex justify-content-end">
 
-        <!-- BOTON LOGIN -->
-        <div class="dropdown me-5">
-          <label class="text-primary">
-          </label>
-          <button class="btn btn-dark" type="button" id="botonLogin" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false">
+      <!-- BOTON LOGIN -->
+        <div class="dropstart show me-5"  data-bs-theme="dark">
+          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-circle-user fa-xl"></i>
           </button>
-  
+          
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" [routerLink]="['login']">Login</a></li>
+            <li><a class="dropdown-item" [routerLink]="['sign-up']">Sign Up</a></li>
+          </ul>
+
         </div>
-        <!-- FIN BOTON LOGIN -->
+      
+      <!-- FIN BOTON LOGIN -->
 
       </form>
   
